@@ -5,19 +5,19 @@
 //   })
 // );
 
-// const scrollToTopBtn = document.getElementById("scrollToTop");
+const scrollToTopBtn = document.getElementById("scrollToTop");
 
-// scrollToTopBtn.addEventListener("click", () => {
-//   scrollTo({ top: 0, behavior: "smooth" });
-// });
+scrollToTopBtn.addEventListener("click", () => {
+  scrollTo({ top: 0, behavior: "smooth" });
+});
 
 const scrollBtn = document.getElementById("scroll");
 const card1 = document.querySelector(".card1");
 
-window.addEventListener("mousemove", (e) => {
-  scrollBtn.style.top = e.clientY + "px";
-  scrollBtn.style.left = e.clientX + "px";
-});
+// window.addEventListener("mousemove", (e) => {
+//   scrollBtn.style.top = e.clientY + "px";
+//   scrollBtn.style.left = e.clientX + "px";
+// });
 card1.addEventListener("click", (e) => {
   function random(min, max) {
     return Math.round(min - 0.5 + Math.random() * (max - min + 1));
